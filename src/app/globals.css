@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #f5cd61;
+  --secondary: #76c8bb;
+  --accent-pink: #f5a2a2;
+  --accent-purple: #9b8fc9;
+  --dark: #333333;
+  --light: #fafafa;
+}
+
+@layer base {
+  body {
+    @apply text-dark bg-[#fafafa] font-sans overflow-x-hidden;
+    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-wider text-dark;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 1px currentColor;
+    color: transparent;
+  }
+  
+  .font-cursive {
+    font-family: 'Caveat', cursive;
+  }
+  
+  .blob-mask {
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+  }
+
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  @keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+
+  .decoration-star {
+    @apply absolute pointer-events-none z-0;
+  }
+
+  .decoration-arrow {
+    @apply absolute pointer-events-none z-0;
+  }
+}
