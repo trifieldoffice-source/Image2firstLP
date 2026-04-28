@@ -18,8 +18,9 @@ export interface ServiceItem {
   title: string;
   subtitle: string;
   description: string;
-  iconPath?: string;
-  iconType?: string;
+  iconPath: string;
+  blobPath?: string;
+  color?: string;
 }
 
 export interface WorkItem {
@@ -28,6 +29,7 @@ export interface WorkItem {
   category: string;
   description: string;
   imagePath?: string;
+  blobPath?: string;
   stats: { label: string; value: string; suffix?: string };
 }
 

@@ -1,15 +1,7 @@
 import SectionTitle from '@/components/elements/SectionTitle';
 import Image from 'next/image';
 
-interface ServiceItem {
-  id: string;
-  title: string;
-  subtitle: string;
-  description: string;
-  iconPath: string;
-  blobPath: string;
-  color: string;
-}
+import { ServiceItem } from '@/types';
 
 interface ServiceProps {
   data: {

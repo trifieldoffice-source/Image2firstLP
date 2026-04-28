@@ -3,15 +3,7 @@ import Button from '@/components/elements/Button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 
-interface WorkItem {
-  id: string;
-  name: string;
-  category: string;
-  description: string;
-  stats: { label: string; value: string; suffix: string };
-  imagePath: string;
-  blobPath: string;
-}
+import { WorkItem } from '@/types';
 
 interface WorksProps {
   data: {

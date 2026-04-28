@@ -66,7 +66,7 @@ export const LP_DATA = {
         blobPath: '/images/blob_04.png',
         color: '#9b8fc9'
       },
-    ] as (ServiceItem & { blobPath: string, color: string })[],
+    ] as ServiceItem[],
   },
   works: {
     sectionTitle: 'WORKS',
@@ -110,7 +110,7 @@ export const LP_DATA = {
         imagePath: '/images/work_04.jpg',
         blobPath: '/images/blob_08.png'
       }
-    ] as (WorkItem & { blobPath: string })[]
+    ] as WorkItem[]
   },
   strength: {
     sectionTitle: 'STRENGTH',
